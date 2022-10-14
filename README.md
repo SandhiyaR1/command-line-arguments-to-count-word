@@ -24,16 +24,18 @@ End the program.
 #Registration no:22001197
 import sys
 count=0
-with open(sys.argv[0],'r') as f:
+with open(sys.argv[1],'r') as f:
     for line in f:
         word = line.split()
         count+= len(word)
-print("World Count in File = ",count)   
+print("Word Count in File = ",count)  
 ```
 
 ### OUTPUT:
-![output](/commandline.png)
+![output](/output.png)
 
+![output](/file.png)
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
+
